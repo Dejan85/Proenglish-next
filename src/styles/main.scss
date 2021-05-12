@@ -10,6 +10,27 @@
 // base
 @import "src/styles/base.scss";
 
-// scss from components
-@import "src/components/frontend/header/styles.scss";
+/**********************************FRONTEND****************************************/
+
+// footer
 @import "src/components/frontend/footer/styles.scss";
+
+/**********************************UI****************************************/
+
+// header
+@import "src/components/ui/header/styles.scss";
+
+// logo
+@import "src/components/ui/logo/styles.scss";
+
+// navigation
+@import "src/components/ui/navigation/styles.scss";
+
+// content container
+@import "src/components/ui/content-container/styles.scss";
+
+// font awesome icon
+@import "src/components/ui/font-awesome-icon/styles.scss";
+
+// sub container
+@import "src/components/ui/sub-container/styles.scss";

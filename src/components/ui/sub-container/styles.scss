@@ -1,0 +1,16 @@
+.sub-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 120rem;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.justify-content-flex-start {
+  justify-content: flex-start;
+}
