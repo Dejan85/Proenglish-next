@@ -1,0 +1,8 @@
+.header {
+  color: red;
+  font-size: 2rem;
+
+  @include respond(900) {
+    color: green;
+  }
+}

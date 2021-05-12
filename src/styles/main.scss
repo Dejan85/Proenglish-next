@@ -1,0 +1,15 @@
+// mixins
+@import "src/styles/mixins/respond.scss";
+@import "src/styles/mixins/gradient.scss";
+@import "src/styles/mixins/tab.scss";
+
+// variables
+@import "src/styles/variables/colors.scss";
+@import "src/styles/variables/fonts.scss";
+
+// base
+@import "src/styles/base.scss";
+
+// scss from components
+@import "src/components/frontend/header/styles.scss";
+@import "src/components/frontend/footer/styles.scss";

@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import { Header, Footer } from "components/frontend";
+import { Header, Footer } from "src/components/frontend";
 
 const Layout = ({ children, title = "Proenglish" }) => {
   return (
