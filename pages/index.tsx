@@ -5,6 +5,8 @@ import {
   HomeCourse,
   HomeBlog,
   Newsletter,
+  HomeEvents,
+  Experience,
 } from "src/components/frontend/home";
 
 const Home = () => {
@@ -15,6 +17,8 @@ const Home = () => {
       <HomeCourse />
       <HomeBlog />
       <Newsletter />
+      <HomeEvents />
+      <Experience />
     </>
   );
 };

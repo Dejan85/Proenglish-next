@@ -60,6 +60,26 @@
 // button
 @import "src/components/ui/button/styles.scss";
 
+// calendar
+@import "src/components/ui/calendar/stylesheets/mixins.scss";
+@import "src/components/ui/calendar/stylesheets/variables.scss";
+@import "src/components/ui/calendar/styles.scss";
+
+// experience modal
+@import "src/components/ui/experience-modal/styles.scss";
+
+// calendar info
+@import "src/components/ui/calendar-info/styles.scss";
+
+// carousel
+@import "react-responsive-carousel/lib/styles/carousel.min.css";
+@import "src/components/ui/carousel/styles.scss";
+
+/**********************************WIDGETS****************************************/
+
+// scheduler
+@import "src/widgets/scheduler/styles.scss";
+
 /**********************************FRONTEND****************************************/
 
 // home - welcome page
@@ -76,6 +96,12 @@
 
 // home - newsletter
 @import "src/components/frontend/home/newsletter/styles.scss";
+
+// home - events
+@import "src/components/frontend/home/events/styles.scss";
+
+// home -experience
+@import "src/components/frontend/home/experience/styles.scss";
 
 // footer
 @import "src/components/frontend/footer/styles.scss";

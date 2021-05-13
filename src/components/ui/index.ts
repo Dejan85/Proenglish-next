@@ -14,3 +14,7 @@ export { Loading } from "./loader";
 export { Image } from "./image";
 export { Input } from "./input";
 export { Button } from "./button";
+export { CalendarUi } from "./calendar";
+export { CalendarInfo } from "./calendar-info";
+export { ExperienceModal } from "./experience-modal";
+export { CarouselUi } from "./carousel";
