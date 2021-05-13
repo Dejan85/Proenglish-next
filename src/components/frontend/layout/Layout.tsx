@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Head from "next/head";
 import { Header, Footer } from "src/components/frontend";
 import { Container } from "src/components/ui";
 
 const Layout = ({ children, title = "Proenglish" }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <Container>
       <Head>

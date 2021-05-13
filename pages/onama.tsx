@@ -1,7 +1,8 @@
 import React from "react";
+import { About } from "src/components/frontend";
 
 const AboutPage = () => {
-  return <div>o nama</div>;
+  return <About />;
 };
 
 export default AboutPage;

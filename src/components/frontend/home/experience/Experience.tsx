@@ -37,7 +37,6 @@ const Render = (): JSX.Element => {
         <CarouselUi>
           {studentsExperiance.map((item) => {
             const { exp, name, img } = item;
-            console.log("test", img);
 
             return (
               <ContentContainer
@@ -65,7 +64,7 @@ const Render = (): JSX.Element => {
                   alignItems="center"
                   height="18rem"
                 >
-                  <ContentContainer width="10rem">
+                  <ContentContainer width="13rem">
                     <ImageUi className="experience-img" alt="img" src={img} />
                   </ContentContainer>
                   <Text

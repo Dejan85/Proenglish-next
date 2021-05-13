@@ -146,7 +146,7 @@ const Footer = () => {
       </div>
       <div className="footer__devxad">
         <h2 className="footer__h2">
-          © Devxad 2019 - MERN APP - All rights reserved.
+          © {`${new Date().getFullYear()}`} - MERN APP - All rights reserved.
         </h2>
       </div>
     </div>
