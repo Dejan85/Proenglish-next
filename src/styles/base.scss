@@ -68,7 +68,7 @@ body {
   }
 }
 
-.slide-out-fwd-center {
+.animate {
   -webkit-animation: slide-out-fwd-center 0.7s
     cubic-bezier(0.55, 0.085, 0.68, 0.53) reverse both;
   animation: slide-out-fwd-center 0.7s cubic-bezier(0.55, 0.085, 0.68, 0.53)
