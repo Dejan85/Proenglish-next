@@ -10,17 +10,6 @@
 // base
 @import "src/styles/base.scss";
 
-/**********************************FRONTEND****************************************/
-
-// home - welcome page
-@import "src/components/frontend/home/welcome-page/styles.scss";
-
-// home - about
-@import "src/components/frontend/home/about/styles.scss";
-
-// footer
-@import "src/components/frontend/footer/styles.scss";
-
 /**********************************UI****************************************/
 
 // header
@@ -52,3 +41,17 @@
 
 // container
 @import "src/components/ui/container/styles.scss";
+
+/**********************************FRONTEND****************************************/
+
+// home - welcome page
+@import "src/components/frontend/home/welcome-page/styles.scss";
+
+// home - about
+@import "src/components/frontend/home/about/styles.scss";
+
+// home - course
+@import "src/components/frontend/home/course/styles.scss";
+
+// footer
+@import "src/components/frontend/footer/styles.scss";
