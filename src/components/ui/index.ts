@@ -12,3 +12,5 @@ export { Line } from "./Line";
 export { BlogModal } from "./blog-modal";
 export { Loading } from "./loader";
 export { Image } from "./image";
+export { Input } from "./input";
+export { Button } from "./button";

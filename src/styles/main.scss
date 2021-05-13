@@ -54,6 +54,12 @@
 // image
 @import "src/components/ui/image/styles.scss";
 
+// input
+@import "src/components/ui/input/styles.scss";
+
+// button
+@import "src/components/ui/button/styles.scss";
+
 /**********************************FRONTEND****************************************/
 
 // home - welcome page
@@ -67,6 +73,9 @@
 
 // home - blog
 @import "src/components/frontend/home/blog/styles.scss";
+
+// home - newsletter
+@import "src/components/frontend/home/newsletter/styles.scss";
 
 // footer
 @import "src/components/frontend/footer/styles.scss";

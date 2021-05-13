@@ -4,6 +4,7 @@ import {
   HomeAbout,
   HomeCourse,
   HomeBlog,
+  Newsletter,
 } from "src/components/frontend/home";
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
       <HomeAbout />
       <HomeCourse />
       <HomeBlog />
+      <Newsletter />
     </>
   );
 };
