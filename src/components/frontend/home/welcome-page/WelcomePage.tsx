@@ -19,6 +19,7 @@ const MemoizedUi: JSX.Element = (
         objectFit="cover"
         objectPosition="center"
         className="welcome-page__background slide-out-fwd-center"
+        quality="40"
       />
       <ContentContainer className="welcome-page__text">
         <Heading as="h1" className="welcome-page__heading">
