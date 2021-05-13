@@ -32,6 +32,10 @@ export default function injectSaga({ key, saga, mode }: InjectSgaProps) {
       static displayName = `withSaga(${
         WrappedComponent.displayName || WrappedComponent.name || "Component"
       })`;
+      injectors: {
+        injectSaga: (key: PropertyKey, descriptor: {}, args: any) => void;
+        ejectSaga: (key: PropertyKey) => void;
+      };
 
       constructor(props, context) {
         super(props, context);
@@ -58,7 +62,7 @@ const useInjectSaga = ({ key, saga, mode }: InjectSgaProps) => {
   const context = React.useContext(ReactReduxContext);
   React.useEffect(() => {
     const injectors = getInjectors(context.store);
-    injectors.injectSaga(key, { saga, mode });
+    injectors.injectSaga(key, { saga, mode }, null);
 
     return () => {
       injectors.ejectSaga(key);

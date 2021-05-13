@@ -6,7 +6,13 @@ import createReducer from "../redux/reducers";
 import { RouterState } from "connected-react-router";
 import { Reducer, CombinedState, AnyAction } from "redux";
 
-export function injectReducerFactory(store: { injectedReducers: object | undefined; replaceReducer: (arg0: Reducer<CombinedState<{ router: RouterState<any>; }>, AnyAction>) => void; }, isValid: boolean) {
+export function injectReducerFactory(
+  store: {
+    injectedReducers: object | undefined;
+    replaceReducer: (arg0: any) => void;
+  },
+  isValid: boolean
+) {
   return function injectReducer(key: PropertyKey, reducer: any) {
     if (!isValid) checkStore(store);
 
@@ -27,7 +33,7 @@ export function injectReducerFactory(store: { injectedReducers: object | undefin
   };
 }
 
-export default function getInjectors(store: { injectedReducers: object | undefined; replaceReducer: (arg0: Reducer<CombinedState<{ router: RouterState<any>; }>, AnyAction>) => void; }) {
+export default function getInjectors(store: any) {
   checkStore(store);
 
   return {

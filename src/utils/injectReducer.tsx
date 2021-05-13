@@ -42,9 +42,10 @@ export default function injectReducer({ key, reducer }) {
 
 const useInjectReducer = ({ key, reducer }) => {
   const context = React.useContext(ReactReduxContext);
-  React.useEffect(() => {
-    getInjectors(context.store).injectReducer(key, reducer);
-  }, []);
+  React.useEffect(
+    () => getInjectors(context.store).injectReducer(key, reducer),
+    []
+  );
 };
 
 export { useInjectReducer };

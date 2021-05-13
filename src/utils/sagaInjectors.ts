@@ -27,7 +27,11 @@ export function injectSagaFactory(
   store: { injectedSagas: object; runSaga: (arg0: any, arg1: any) => any },
   isValid: boolean
 ) {
-  return function injectSaga(key: PropertyKey, descriptor = {}, args: any) {
+  return function injectSaga(
+    key: PropertyKey,
+    descriptor: any = {},
+    args: any
+  ) {
     if (!isValid) checkStore(store);
 
     const newDescriptor = {
