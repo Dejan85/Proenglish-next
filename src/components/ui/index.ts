@@ -8,3 +8,7 @@ export { Text } from "./text";
 export { Heading } from "./heading";
 export { HomeIconsBoxes } from "./home-icons-boxes";
 export { Container } from "./container";
+export { Line } from "./Line";
+export { BlogModal } from "./blog-modal";
+export { Loading } from "./loader";
+export { Image } from "./image";

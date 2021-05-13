@@ -3,6 +3,7 @@ import {
   WelcomePage,
   HomeAbout,
   HomeCourse,
+  HomeBlog,
 } from "src/components/frontend/home";
 
 const Home = () => {
@@ -11,6 +12,7 @@ const Home = () => {
       <WelcomePage />
       <HomeAbout />
       <HomeCourse />
+      <HomeBlog />
     </>
   );
 };

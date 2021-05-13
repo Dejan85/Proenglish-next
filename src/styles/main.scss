@@ -42,6 +42,18 @@
 // container
 @import "src/components/ui/container/styles.scss";
 
+// line
+@import "src/components/ui/line/styles.scss";
+
+// blog modal
+@import "src/components/ui/blog-modal/styles.scss";
+
+// loader
+@import "src/components/ui/loader/styles.scss";
+
+// image
+@import "src/components/ui/image/styles.scss";
+
 /**********************************FRONTEND****************************************/
 
 // home - welcome page
@@ -52,6 +64,9 @@
 
 // home - course
 @import "src/components/frontend/home/course/styles.scss";
+
+// home - blog
+@import "src/components/frontend/home/blog/styles.scss";
 
 // footer
 @import "src/components/frontend/footer/styles.scss";
