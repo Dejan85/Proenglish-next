@@ -1,10 +1,11 @@
 import React from "react";
 import Head from "next/head";
 import { Header, Footer } from "src/components/frontend";
+import { Container } from "src/components/ui";
 
 const Layout = ({ children, title = "Proenglish" }) => {
   return (
-    <div>
+    <Container>
       <Head>
         <title>{title}</title>
         <meta charSet="utf-8" />
@@ -13,7 +14,7 @@ const Layout = ({ children, title = "Proenglish" }) => {
       <Header />
       {children}
       <Footer />
-    </div>
+    </Container>
   );
 };
 

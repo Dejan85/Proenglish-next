@@ -3,7 +3,6 @@ import { NavigationProps } from "./types";
 import List from "./partials/List";
 import uniqid from "uniqid";
 import ResponsiveNavigation from "./ResponsiveNav";
-import Link from "next/link";
 import ActiveLink from "./partials/ActiveLink";
 
 const Wrapper = "ul";

@@ -4,3 +4,7 @@ export { FontAwesomeIcon } from "./font-awesome-icon";
 export { Logo } from "./logo";
 export { SubContainer } from "./sub-container";
 export { Navigation } from "./navigation";
+export { Text } from "./text";
+export { Heading } from "./heading";
+export { HomeIconsBoxes } from "./home-icons-boxes";
+export { Container } from "./container";

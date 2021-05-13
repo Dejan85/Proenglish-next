@@ -12,8 +12,8 @@
 
 /**********************************FRONTEND****************************************/
 
-// footer
-@import "src/components/frontend/footer/styles.scss";
+// home - welcome page
+@import "src/components/frontend/home/welcome-page/styles.scss";
 
 /**********************************UI****************************************/
 
@@ -34,3 +34,15 @@
 
 // sub container
 @import "src/components/ui/sub-container/styles.scss";
+
+// text
+@import "src/components/ui/text/styles.scss";
+
+// heading
+@import "src/components/ui/heading/styles.scss";
+
+// home icon boxes
+@import "src/components/ui/home-icons-boxes/styles.scss";
+
+// container
+@import "src/components/ui/container/styles.scss";
