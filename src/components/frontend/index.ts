@@ -6,4 +6,5 @@ export { Exams } from "./exams";
 export { Pricelist } from "./pricelist";
 export { Events } from "./events";
 export { Blog, BlogPage } from "./blog";
+export { Contact } from "./contact";
 export { Footer } from "./footer";
