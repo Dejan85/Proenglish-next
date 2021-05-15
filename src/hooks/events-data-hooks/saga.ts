@@ -11,7 +11,7 @@ import { request } from "src/utils/requests";
 
 function* fetchEventsDataGenerator() {
   try {
-    const url: string = "events/get";
+    const url: string = "api/events";
     const response: object = yield call(request, url, "GET");
 
     yield put(setEventsData(response));
