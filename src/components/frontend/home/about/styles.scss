@@ -17,6 +17,9 @@
     @include respond(900) {
       align-items: center;
       width: 100%;
+      &--container {
+        padding: 0rem 2rem;
+      }
     }
   }
 
@@ -73,7 +76,8 @@
     }
 
     @include respond(900) {
-      font-size: 2.2rem;
+      font-size: 2.7rem;
+      padding: 2.7rem;
     }
 
     @include respond(600) {
