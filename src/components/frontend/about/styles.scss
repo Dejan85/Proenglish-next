@@ -48,9 +48,17 @@
     width: 60%;
     padding-right: 3rem;
 
+    @include respond(900) {
+      padding-right: 0;
+    }
+
     p {
       padding: 0rem 0 3rem 0;
       text-align: justify;
+
+      @include respond(900) {
+        padding: 0 2rem;
+      }
     }
 
     p > span {
@@ -71,6 +79,10 @@
   &__text-left {
     padding-right: 0rem;
     padding-left: 3rem;
+
+    @include respond(900) {
+      padding-left: 0;
+    }
   }
 
   &__image {
