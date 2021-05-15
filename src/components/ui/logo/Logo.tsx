@@ -7,7 +7,7 @@ const className: string = "logo";
 const Logo = (): JSX.Element => {
   return (
     <Wrapper className={className}>
-      <Image src="/logo/logo.png" alt="img" layout="fill" />
+      <Image src="/logo/logo.png" alt="img" layout="fill" loading="eager" />
     </Wrapper>
   );
 };

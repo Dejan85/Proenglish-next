@@ -23,6 +23,7 @@ const UiRender = (props: UiRenderProps) => {
           src="/about/background.jpg"
           layout="fill"
           objectFit="cover"
+          loading="eager"
         />
       </ContentContainer>
 
@@ -47,7 +48,7 @@ const UiRender = (props: UiRenderProps) => {
                           src="/about/image.jpg"
                           layout="fill"
                           objectFit="cover"
-                          className="slide-out-fwd-center"
+                          loading="eager"
                         />
                       </ContentContainer>
                     </ContentContainer>
@@ -57,11 +58,12 @@ const UiRender = (props: UiRenderProps) => {
                 <>
                   <ContentContainer className="about__background-2">
                     <Image
-                      className="about__image slide-out-fwd-center"
+                      className="about__image"
                       alt="img"
                       src="/about/background.jpg"
                       layout="fill"
                       objectFit="cover"
+                      loading="eager"
                     />
                   </ContentContainer>
 
@@ -76,7 +78,7 @@ const UiRender = (props: UiRenderProps) => {
                           src="/about/image2.jpg"
                           layout="fill"
                           objectFit="cover"
-                          className="slide-out-fwd-center"
+                          loading="eager"
                         />
                       </ContentContainer>
                       <ContentContainer className="about__text-left">

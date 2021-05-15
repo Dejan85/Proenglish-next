@@ -22,6 +22,7 @@ const Render = (): JSX.Element => {
         alt="img"
         layout="fill"
         objectFit="cover"
+        loading="eager"
       />
       <SubContainer className="home-experience__container">
         <ContentContainer className="home-experience__heading-container">

@@ -29,6 +29,7 @@ const Course = (): JSX.Element => {
             src="/home/course/img.jpg"
             layout="fill"
             objectFit="cover"
+            loading="eager"
           />
         </ContentContainer>
         <ContentContainer className="home-course__right-text-container">
@@ -66,6 +67,7 @@ const Course = (): JSX.Element => {
             src="/home/course/img2.jpg"
             layout="fill"
             objectFit="cover"
+            loading="eager"
           />
         </ContentContainer>
       </ContentContainer>

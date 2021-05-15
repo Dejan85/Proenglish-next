@@ -12,6 +12,7 @@ const MemoizedUi: JSX.Element = (
           alt="img"
           layout="fill"
           objectFit="cover"
+          loading="eager"
         />
       </ContentContainer>
 

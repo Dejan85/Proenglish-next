@@ -48,6 +48,7 @@ const About = (): JSX.Element => {
             src="/home/about/img.jpg"
             layout="fill"
             objectFit="cover"
+            loading="eager"
           />
         </ContentContainer>
       </ContentContainer>
