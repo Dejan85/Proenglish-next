@@ -3,6 +3,10 @@
   align-items: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
 
+  @include respond(900) {
+    position: relative;
+  }
+
   &__image {
     width: 50%;
     height: 40rem;
@@ -26,17 +30,33 @@
       width: 100%;
       margin-right: 2rem;
     }
+
+    @include respond(900) {
+      position: absolute;
+      margin-left: 0;
+      width: 98%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 
   &__text {
     color: white;
+
+    @include respond(900) {
+      font-size: 2.6rem;
+    }
   }
 
   &__input-container {
     justify-content: space-between;
-    max-width: 65rem;
-    width: 100%;
+    width: 65rem;
     align-self: flex-end;
+
+    @include respond(900) {
+      width: 100%;
+    }
   }
 
   &__input {
@@ -46,5 +66,9 @@
 
   &__button {
     padding: 0 3rem;
+
+    @include respond(900) {
+      font-size: 2rem;
+    }
   }
 }
