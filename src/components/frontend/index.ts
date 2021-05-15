@@ -5,4 +5,5 @@ export { Course } from "./course";
 export { Exams } from "./exams";
 export { Pricelist } from "./pricelist";
 export { Events } from "./events";
+export { Blog, BlogPage } from "./blog";
 export { Footer } from "./footer";
