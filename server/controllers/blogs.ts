@@ -1,8 +1,8 @@
-import blogsModel from "../models/blogsModel";
+import BlogModel from "../models/blogsModel";
 
 const getBlog = async (req: any, res: any) => {
   try {
-    const blogs = await blogsModel.find();
+    const blogs = await BlogModel.find();
 
     res.status(200).json(blogs);
   } catch (error) {

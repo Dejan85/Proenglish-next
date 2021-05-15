@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const blogSchema = new mongoose.Schema({
+const examsSchema = new mongoose.Schema({
   title: {
     type: String,
     required: true,
@@ -17,17 +17,18 @@ const blogSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  photo: {
-    data: Buffer,
-    contentType: String,
-  },
+  // photo: {
+  //   data: Buffer,
+  //   contentType: String
+  // },
   created: {
     type: Date,
-    default: Date.now(),
+    default: Date.now,
   },
   updated: Date,
 });
 
-const BlogModel = mongoose.models.Blog || mongoose.model("Blog", blogSchema);
+const ExamsModel =
+  mongoose.models.Exams || mongoose.model("Exams", examsSchema);
 
-export default BlogModel;
+export default ExamsModel;

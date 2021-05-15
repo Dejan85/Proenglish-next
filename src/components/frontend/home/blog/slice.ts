@@ -13,6 +13,8 @@ const blogSlice = createSlice({
   initialState,
   reducers: {
     setBlogData(state, action) {
+      console.log("test", "radi opet");
+
       const data: object[] = action.payload.data.map(
         ({
           photo: {

@@ -4,7 +4,7 @@ import { request } from "src/utils/requests";
 
 function* fetchAboutDataGenerator() {
   try {
-    const url: string = "about/get";
+    const url: string = "api/about";
     const response: object = yield call(request, url, "GET");
     yield put(setAboutData(response));
   } catch (error) {
