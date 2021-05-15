@@ -20,9 +20,9 @@ const ResponsiveNavigation = (props: NavigationProps): JSX.Element => {
 
   return (
     <Wrapper className={className}>
-      <ContentContainer className="responsive-navigation__container">
-        {toggleNav &&
-          linksText?.map((text: string, index: number) => (
+      {toggleNav && (
+        <ContentContainer className="responsive-navigation__container">
+          {linksText?.map((text: string, index: number) => (
             <List key={uniqid()} onClick={dropNavHandler}>
               <Link
                 activeClassName={responsiveActiveClassName}
@@ -32,7 +32,8 @@ const ResponsiveNavigation = (props: NavigationProps): JSX.Element => {
               </Link>
             </List>
           ))}
-      </ContentContainer>
+        </ContentContainer>
+      )}
 
       <FontAwesomeIcon
         className="fas fa-bars responsive-navigation__icon"
