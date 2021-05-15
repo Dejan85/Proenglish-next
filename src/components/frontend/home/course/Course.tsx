@@ -30,6 +30,7 @@ const Course = (): JSX.Element => {
             layout="fill"
             objectFit="cover"
             loading="eager"
+            priority
           />
         </ContentContainer>
         <ContentContainer className="home-course__right-text-container">
@@ -68,6 +69,7 @@ const Course = (): JSX.Element => {
             layout="fill"
             objectFit="cover"
             loading="eager"
+            priority
           />
         </ContentContainer>
       </ContentContainer>

@@ -49,6 +49,7 @@ const UiRender = (props: UiRenderProps) => {
                           layout="fill"
                           objectFit="cover"
                           loading="eager"
+                          priority
                         />
                       </ContentContainer>
                     </ContentContainer>
@@ -64,6 +65,7 @@ const UiRender = (props: UiRenderProps) => {
                       layout="fill"
                       objectFit="cover"
                       loading="eager"
+                      priority
                     />
                   </ContentContainer>
 
@@ -79,6 +81,7 @@ const UiRender = (props: UiRenderProps) => {
                           layout="fill"
                           objectFit="cover"
                           loading="eager"
+                          priority
                         />
                       </ContentContainer>
                       <ContentContainer className="about__text-left">

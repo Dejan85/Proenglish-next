@@ -13,6 +13,7 @@ const MemoizedUi: JSX.Element = (
           layout="fill"
           objectFit="cover"
           loading="eager"
+          priority
         />
       </ContentContainer>
 

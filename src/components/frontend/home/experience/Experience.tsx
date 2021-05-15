@@ -23,6 +23,7 @@ const Render = (): JSX.Element => {
         layout="fill"
         objectFit="cover"
         loading="eager"
+        priority
       />
       <SubContainer className="home-experience__container">
         <ContentContainer className="home-experience__heading-container">

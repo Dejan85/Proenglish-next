@@ -49,6 +49,7 @@ const About = (): JSX.Element => {
             layout="fill"
             objectFit="cover"
             loading="eager"
+            priority
           />
         </ContentContainer>
       </ContentContainer>

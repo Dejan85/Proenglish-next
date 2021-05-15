@@ -1,13 +1,30 @@
 import React from "react";
-import { ContentContainer, Image, Heading, Text } from "src/components/ui";
+import { ContentContainer, Heading, Text } from "src/components/ui";
 import Form from "./Form";
+import Image from "next/image";
 
 const RenderUi = () => {
   return (
     <ContentContainer className="contact">
       <ContentContainer className="contact__map">
-        <Image src="contact/adresa2.jpg" alt="img" />
-        <Image src="contact/adresa3.jpg" alt="img" />
+        <Image
+          src="/contact/adresa2.jpg"
+          alt="img"
+          width="951px"
+          height="512px"
+          layout="responsive"
+          loading="eager"
+          priority
+        />
+        <Image
+          src="/contact/adresa3.jpg"
+          alt="img"
+          width="951px"
+          height="512px"
+          layout="responsive"
+          loading="eager"
+          priority
+        />
       </ContentContainer>
       <ContentContainer className="contact__form-content">
         <ContentContainer className="contact__heading-container">
