@@ -25,11 +25,10 @@ const ResponsiveNavigation = (props: NavigationProps): JSX.Element => {
           linksText?.map((text: string, index: number) => (
             <List key={uniqid()} onClick={dropNavHandler}>
               <Link
-                className={linkClassName}
                 activeClassName={responsiveActiveClassName}
                 href={linksPath[index]}
               >
-                {text}
+                <a className={linkClassName}>{text}</a>
               </Link>
             </List>
           ))}
