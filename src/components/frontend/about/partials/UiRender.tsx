@@ -17,14 +17,14 @@ const UiRender = (props: UiRenderProps) => {
   return (
     <>
       <ContentContainer className="about__background">
-        <Image
+        {/* <Image
           className="about__image slide-out-fwd-center"
           alt="img"
           src="/about/background.jpg"
           layout="fill"
           objectFit="cover"
           loading="eager"
-        />
+        /> */}
       </ContentContainer>
 
       {aboutData?.length ? (

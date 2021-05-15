@@ -8,6 +8,13 @@
     position: relative;
     height: 55rem;
     z-index: -1;
+
+    background-image: url(/about/background.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    z-index: -1;
   }
 
   &__sub-container {
