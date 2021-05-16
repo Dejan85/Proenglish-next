@@ -84,7 +84,7 @@ const RenderUi = (): JSX.Element => {
     <ContentContainer className="course">
       <ContentContainer className="course__top-container">
         <ContentContainer className="course__right-content">
-          <Link href="/">
+          <Link href="/test">
             <a className="course__heading">{heading}</a>
           </Link>
 
