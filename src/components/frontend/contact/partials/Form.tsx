@@ -1,6 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { ContentContainer, Label, Button, Text } from "src/components/ui";
+import axios from "axios";
 
 type FormValues = {
   name: string;
@@ -17,7 +18,8 @@ const Form = () => {
     formState: { errors },
   } = useForm<FormValues>();
 
-  const onSubmit = (data: any) => console.log(data);
+  const onSubmit = (data: any) =>
+    axios.post("/api/contact", data).then((res) => console.log("test", res));
 
   return (
     <form className="contact__form" onSubmit={handleSubmit(onSubmit)}>
