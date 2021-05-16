@@ -2,6 +2,11 @@ import React from "react";
 import { ContentContainer, Text, Input, Button } from "src/components/ui";
 import { msg } from "./messages";
 import Image from "next/image";
+import MailchimpSubscribe from "react-mailchimp-subscribe";
+import { CustomForm } from "./partials/CustomForm";
+
+const formUrl =
+  "https://gmail.us1.list-manage.com/subscribe/post?u=082a6d69b40000ab3aa18ac47&amp;id=823276af62";
 
 const MemoizedUi: JSX.Element = (
   <>
@@ -32,11 +37,16 @@ const MemoizedUi: JSX.Element = (
           </Text>
         </ContentContainer>
         <ContentContainer className="home-newsletter__input-container">
-          <Input
-            className="home-newsletter__input"
-            placeholder="Uzmite svoju dozu znanja..."
+          <MailchimpSubscribe
+            url={formUrl}
+            render={({ subscribe, status, message }) => (
+              <CustomForm
+                status={status}
+                message={message}
+                onValidated={(formData) => subscribe(formData)}
+              />
+            )}
           />
-          <Button className="home-newsletter__button">Prijavi se</Button>
         </ContentContainer>
       </ContentContainer>
     </ContentContainer>
