@@ -9,6 +9,7 @@ import { Scrollbars } from "react-custom-scrollbars";
 import uniqid from "uniqid";
 import { EventTypes, RenderProps, UiRenderProps } from "../types";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 const Render = (props: RenderProps): JSX.Element => {
   const { filteredEvents } = props;
@@ -38,11 +39,6 @@ const MonthlyEvents = (props: UiRenderProps): JSX.Element => {
   } = props;
   const router = useRouter();
 
-  const onclick = (e) => {
-    e.preventDefault();
-    router.push(e.target.href);
-  };
-
   return (
     <ContentContainer className="home-events__monthly-events">
       <Heading className="home-events__calendar-heading" as="h2">
@@ -55,9 +51,9 @@ const MonthlyEvents = (props: UiRenderProps): JSX.Element => {
       >
         <Render filteredEvents={filteredEvents} />
       </Scrollbars>
-      <a className="home-events__link" href="/" onClick={onclick}>
-        Vidi Detaljno
-      </a>
+      <Link href="/dogadjaji">
+        <a className="home-events__link">Vidi Detaljno</a>
+      </Link>
     </ContentContainer>
   );
 };

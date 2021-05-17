@@ -12,6 +12,7 @@ import {
 import saga from "src/components/frontend/home/blog/saga";
 import RenderOneBlogPage from "./partials/RenderOneBlogPage";
 import { Loading } from "src/components/ui";
+import { useRouter } from "next/router";
 
 const BlogPage = (props: any): JSX.Element => {
   useInjectReducer({ key: BLOG_SCOPE, reducer });
@@ -19,6 +20,9 @@ const BlogPage = (props: any): JSX.Element => {
   const dispatch = useDispatch();
   const { match } = props;
   const { blogData, oneBlogData } = useSelector(getBlogData);
+  const router = useRouter();
+
+  console.log("test", router.query);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -28,7 +32,7 @@ const BlogPage = (props: any): JSX.Element => {
   }, []);
 
   useEffect(() => {
-    dispatch(getOneBlogAction(match.params.blogId));
+    dispatch(getOneBlogAction(router.query.id));
   }, [blogData]);
 
   return oneBlogData?.length ? (

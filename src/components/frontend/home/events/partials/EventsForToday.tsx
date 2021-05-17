@@ -8,6 +8,7 @@ import {
 import { Scrollbars } from "react-custom-scrollbars";
 import uniqid from "uniqid";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 const Render = (props: { filteredDailyEventsData: object[] }): JSX.Element => {
   const { filteredDailyEventsData } = props;
@@ -36,10 +37,6 @@ const EventsForToday = (props: {
 }): JSX.Element => {
   const router = useRouter();
   const { filteredDailyEventsData } = props;
-  const onClick = (e) => {
-    e.preventDefault();
-    router.push(e.target.href);
-  };
 
   return (
     <ContentContainer className="home-events__events-for-today">
@@ -53,9 +50,9 @@ const EventsForToday = (props: {
       >
         <Render filteredDailyEventsData={filteredDailyEventsData} />
       </Scrollbars>
-      <a className="home-events__link" href="a" onClick={onClick}>
-        Vidi Detaljno
-      </a>
+      <Link href="/dogadjaji">
+        <a className="home-events__link">Vidi Detaljno</a>
+      </Link>
     </ContentContainer>
   );
 };

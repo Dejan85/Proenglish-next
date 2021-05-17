@@ -19,6 +19,8 @@ import { headingText } from "../messages";
 const RenderModal = (props: { blogData: object[] }): JSX.Element => {
   const { blogData: data } = props;
 
+  console.log("test", data);
+
   return (
     <>
       {data.slice(0, 4).map(
@@ -32,7 +34,7 @@ const RenderModal = (props: { blogData: object[] }): JSX.Element => {
             />
             <a
               className="no-background-color heading-link home-blog__modal-link"
-              href="/"
+              href={`/blog/${item._id}`}
             >
               {item.title}
             </a>
