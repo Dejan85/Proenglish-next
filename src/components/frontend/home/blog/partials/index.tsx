@@ -19,8 +19,6 @@ import { headingText } from "../messages";
 const RenderModal = (props: { blogData: object[] }): JSX.Element => {
   const { blogData: data } = props;
 
-  console.log("test", data);
-
   return (
     <>
       {data.slice(0, 4).map(

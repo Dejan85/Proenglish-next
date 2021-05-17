@@ -7,7 +7,6 @@ const EnterTestModal = ({
   onSubmit,
   showModalHandler,
 }) => {
-  //   console.log("test error", error && error.firstname);
   return (
     <div className="initialTest__enter_test_modal">
       <div className="contact__form">

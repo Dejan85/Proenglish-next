@@ -22,8 +22,6 @@ const BlogPage = (props: any): JSX.Element => {
   const { blogData, oneBlogData } = useSelector(getBlogData);
   const router = useRouter();
 
-  console.log("test", router.query);
-
   useEffect(() => {
     window.scrollTo(0, 0);
     if (!blogData.length) {

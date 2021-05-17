@@ -107,8 +107,6 @@ const useForm = (handler) => {
           question: input.question,
         })
           .then((res) => {
-            console.log("test", res);
-
             handler(res);
           })
           .catch((err) => {
