@@ -46,7 +46,7 @@ const BlogModal = (props: {
           {blog.description.substr(0, 400)}...
         </Text>
         <ContentContainer>
-          <Link href={`/blog/${blog._id}`}>
+          <Link href={`/${blog._id}`}>
             <a className="blog__modal-link">Procitaj sve</a>
           </Link>
         </ContentContainer>

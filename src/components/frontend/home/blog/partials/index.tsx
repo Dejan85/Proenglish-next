@@ -30,7 +30,7 @@ const RenderModal = (props: { blogData: object[] }): JSX.Element => {
               type="base64"
               className="home-blog__modal-image"
             />
-            <Link href={`/blog/${item._id}`}>
+            <Link href={`/${item._id}`}>
               <a className="no-background-color heading-link home-blog__modal-link">
                 {item.title}
               </a>

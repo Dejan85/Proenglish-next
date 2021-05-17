@@ -14,7 +14,7 @@ import RenderOneBlogPage from "./partials/RenderOneBlogPage";
 import { Loading } from "src/components/ui";
 import { useRouter } from "next/router";
 
-const BlogPage = (props: any): JSX.Element => {
+const BlogPage = (): JSX.Element => {
   useInjectReducer({ key: BLOG_SCOPE, reducer });
   useInjectSaga({ key: BLOG_SCOPE, saga });
   const dispatch = useDispatch();
@@ -22,14 +22,15 @@ const BlogPage = (props: any): JSX.Element => {
   const router = useRouter();
 
   useEffect(() => {
-    window.scrollTo(0, 0);
     if (!blogData.length) {
       dispatch(fetchBlogData());
     }
   }, []);
 
   useEffect(() => {
-    dispatch(getOneBlogAction(router.query.id));
+    if (blogData.length) {
+      dispatch(getOneBlogAction(router.query.id));
+    }
   }, [blogData]);
 
   return oneBlogData?.length ? (
