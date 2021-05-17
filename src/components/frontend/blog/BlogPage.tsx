@@ -18,7 +18,6 @@ const BlogPage = (props: any): JSX.Element => {
   useInjectReducer({ key: BLOG_SCOPE, reducer });
   useInjectSaga({ key: BLOG_SCOPE, saga });
   const dispatch = useDispatch();
-  const { match } = props;
   const { blogData, oneBlogData } = useSelector(getBlogData);
   const router = useRouter();
 

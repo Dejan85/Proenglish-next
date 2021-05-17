@@ -1,6 +1,5 @@
 import React from "react";
 import uniqid from "uniqid";
-import { useRouter } from "next/router";
 import {
   Line,
   BlogModal,
@@ -15,6 +14,7 @@ import {
 import { FormatTime } from "src/utils/timeAndDateHandlers";
 import { SubStr } from "src/utils/SubStr";
 import { headingText } from "../messages";
+import Link from "next/link";
 
 const RenderModal = (props: { blogData: object[] }): JSX.Element => {
   const { blogData: data } = props;
@@ -30,12 +30,11 @@ const RenderModal = (props: { blogData: object[] }): JSX.Element => {
               type="base64"
               className="home-blog__modal-image"
             />
-            <a
-              className="no-background-color heading-link home-blog__modal-link"
-              href={`/blog/${item._id}`}
-            >
-              {item.title}
-            </a>
+            <Link href={`/blog/${item._id}`}>
+              <a className="no-background-color heading-link home-blog__modal-link">
+                {item.title}
+              </a>
+            </Link>
 
             <ContentContainer className="home-blog__modal-text-container">
               <Text as="p" className="home-blog__modal-text">
