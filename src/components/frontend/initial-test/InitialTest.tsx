@@ -41,10 +41,10 @@ const renderQuestions = (questions, onChangeHandler, page, answersState) => {
 };
 
 const InitialTest = () => {
-  const { input, error, onChange, onSubmit } = useForm();
+  const { input, error, onChange, onSubmit } = useForm(null);
   const [answersState, setAnswersState] = useState({});
   const [page, setPage] = useState(1);
-  const [resultState, setResultState] = useState();
+  const [resultState, setResultState] = useState(null);
   const [showModal, setShowModal] = useState(true);
   const [showResult, setShowResult] = useState(false);
   const [endTestMsg, setEndTestMsg] = useState("A1");
@@ -155,7 +155,7 @@ const InitialTest = () => {
 
   const testDoneHandler = () => {
     resultState.forEach((item) => {
-      testHandler(item, 8);
+      testHandler(item, 8, null);
       testHandler(item, 8, 16);
       testHandler(item, 16, 24);
       testHandler(item, 24, 32);

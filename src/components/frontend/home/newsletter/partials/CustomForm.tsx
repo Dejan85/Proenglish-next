@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Button } from "src/components/ui";
 
 export const CustomForm = ({ status, message, onValidated }) => {
-  const [error, setError] = useState();
+  const [error, setError] = useState("");
 
   const alredySubscribed = "is already subscribed to list";
   const toManyRequest = "has too many recent signup requests";

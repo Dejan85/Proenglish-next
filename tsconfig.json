@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
+    "downlevelIteration": true,
     "lib": [
       "dom",
       "dom.iterable",
@@ -31,5 +32,5 @@
   ],
   "exclude": [
     "node_modules"
-  ]
+  ],
 }

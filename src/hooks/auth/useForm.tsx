@@ -50,15 +50,8 @@ const useForm = (handler) => {
 
   const onSubmit = (e, showModalHandler, testInfo) => {
     e && e.preventDefault();
-    const {
-      firstname,
-      lastname,
-      email,
-      password,
-      confirmPassword,
-      title,
-      question,
-    } = errorHandle(input);
+    const { firstname, lastname, email, password, confirmPassword } =
+      errorHandle(input);
 
     if (e.target.name === "signup") {
       if (!firstname && !lastname && !email && !password && !confirmPassword) {
@@ -99,7 +92,7 @@ const useForm = (handler) => {
     }
 
     if (e.target.name === "contact") {
-      if (!firstname && !email && !title && !question) {
+      if (!firstname && !email) {
         return contactForm({
           name: input.firstname,
           email: input.email,
@@ -114,7 +107,7 @@ const useForm = (handler) => {
             console.log(err);
           });
       } else {
-        setError({ firstname, email, title, question });
+        setError({ firstname, email });
       }
     }
 
@@ -127,7 +120,7 @@ const useForm = (handler) => {
     }
 
     if (e.target.name === "testDone") {
-      if (!firstname && !email && !title && !question) {
+      if (!firstname && !email) {
         return contactForm({
           name: input.firstname,
           email: input.email,
