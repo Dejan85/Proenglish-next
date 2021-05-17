@@ -7,7 +7,6 @@
 
   &__container {
     display: flex;
-    flex-wrap: wrap;
     max-width: 120rem;
     width: 100%;
     padding: 0 2rem 0 2rem;
@@ -16,6 +15,7 @@
 
     @include respond(900) {
       justify-content: center;
+      flex-wrap: wrap;
     }
   }
 
