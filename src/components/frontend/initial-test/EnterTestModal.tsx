@@ -56,7 +56,7 @@ const EnterTestModal = ({
             />
           </div>
           <div className="initialTest__contact__input">
-            <button>Zapocni test</button>
+            <button>Započni test</button>
           </div>
         </form>
       </div>

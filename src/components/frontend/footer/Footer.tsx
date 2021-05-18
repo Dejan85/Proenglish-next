@@ -77,7 +77,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="footer__certificate">
-            <h1 className="footer__h1">Sertificati</h1>
+            <h1 className="footer__h1">Sertifikati</h1>
             <ul className="footer__list">
               <li className="footer__item">
                 <a
