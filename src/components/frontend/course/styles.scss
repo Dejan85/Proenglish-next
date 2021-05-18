@@ -2,7 +2,7 @@
   flex-direction: column;
 
   &__top-container {
-    background-image: url(./images/background.jpg);
+    // background-image: url(./images/background.jpg);
     position: relative;
     justify-content: flex-end;
   }
@@ -70,7 +70,8 @@
   }
 
   &__bottom-container {
-    background-image: url(./images/background2.jpg);
+    position: relative;
+    // background-image: url(./images/background2.jpg);
     height: 95vh;
 
     @include respond(900) {

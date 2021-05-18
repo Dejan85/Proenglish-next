@@ -6,6 +6,7 @@ import { courseData } from "../messages";
 import { useStringSplit } from "src/hooks/index";
 const initCourse = ["a1", "a2", "b1", "b2", "c1", "c2"];
 import Link from "next/link";
+import Image from "next/image";
 
 const counterHandlerDecrese = (
   setCounter: React.Dispatch<React.SetStateAction<number>>,
@@ -83,6 +84,16 @@ const RenderUi = (): JSX.Element => {
   return (
     <ContentContainer className="course">
       <ContentContainer className="course__top-container">
+        <Image
+          src="/course/background.jpg"
+          alt="img"
+          layout="fill"
+          objectFit="cover"
+          objectPosition="center"
+          className="welcome-page__background slide-out-fwd-center"
+          loading="eager"
+          priority
+        />
         <ContentContainer className="course__right-content">
           <Link href="/test">
             <a className="course__heading">{heading}</a>
@@ -103,6 +114,16 @@ const RenderUi = (): JSX.Element => {
         </ContentContainer>
       </ContentContainer>
       <ContentContainer className="course__bottom-container">
+        <Image
+          src="/course/background2.jpg"
+          alt="img"
+          layout="fill"
+          objectFit="cover"
+          objectPosition="center"
+          className="welcome-page__background slide-out-fwd-center"
+          loading="eager"
+          priority
+        />
         <ContentContainer className="course__left-content">
           <ContentContainer className="course__diagram-nav-container">
             <ContentContainer
