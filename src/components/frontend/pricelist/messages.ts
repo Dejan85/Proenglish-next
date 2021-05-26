@@ -68,7 +68,7 @@ export const tableData = [
     },
     rows: {
       first: "Grupa do 4 polaznika",
-      second: "75 minuta x 2 časova nedeljno – 6400 rsd***",
+      second: "75 minuta x 8 časova mesečno – 6400 rsd***",
       third: "Individualne pripreme",
       for: "60 minuta – 1600 dinara**",
       color: "white",

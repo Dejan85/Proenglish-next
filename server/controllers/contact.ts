@@ -10,14 +10,14 @@ const contact = (req, res) => {
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: "xypnotica@gmail.com",
-      pass: "dcpzprofyrofxxiv",
+      user: "proenglishxad@gmail.com",
+      pass: "swetcfezazfuuauj",
     },
   });
 
   const mailOption = {
     from: email,
-    to: "xypnotica@gmail.com",
+    to: "proenglishxad@gmail.com",
     subject: title,
     text: question,
   };
