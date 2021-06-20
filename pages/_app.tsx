@@ -1,19 +1,7 @@
-import { Layout } from "src/components/frontend";
-import "src/styles/main.scss";
-import { Provider } from "react-redux";
-import configureStore from "src/redux/configureStore";
+import '../styles/globals.css'
+import type { AppProps } from 'next/app'
 
-const initialState = {};
-const store = configureStore(initialState);
-
-function MyApp({ Component, pageProps }) {
-  return (
-    <Provider store={store}>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </Provider>
-  );
+function MyApp({ Component, pageProps }: AppProps) {
+  return <Component {...pageProps} />
 }
-
-export default MyApp;
+export default MyApp
