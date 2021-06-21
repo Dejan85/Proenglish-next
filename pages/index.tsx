@@ -1,5 +1,6 @@
 import Head from "next/head";
-import Image from "next/image";
+import fs from "fs";
+import path from "path";
 
 export default function Home() {
   return (
@@ -11,4 +12,8 @@ export default function Home() {
       </Head>
     </div>
   );
+}
+
+export async function getStaticProps() {
+  return { props: {} };
 }
