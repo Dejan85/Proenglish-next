@@ -13,17 +13,6 @@ const titlesSlice = createSlice({
     getTitles(state, action) {
       const { data } = action.payload;
       state.titles = data;
-
-      //   state.titles = data;
-    },
-    getTitle(state, action) {
-      //   state.oneBlogData = state.blogData.filter((blog: any) => {
-      //     if (blog._id === action.payload) {
-      //       return blog;
-      //     }
-      //   });
-
-      console.log("test getTitle", action);
     },
   },
 });
@@ -31,5 +20,5 @@ const titlesSlice = createSlice({
 export const fetchTitlesData = createAction("get_blog_data");
 export const getTitleAction = createAction<Record<string, any>>("get_one_data");
 
-export const { getTitles, getTitle } = titlesSlice.actions;
+export const { getTitles } = titlesSlice.actions;
 export const { reducer } = titlesSlice;
