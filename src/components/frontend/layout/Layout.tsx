@@ -44,6 +44,11 @@ const Layout = ({ children }) => {
         <title>{handleTitle()}</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta
+          name="description"
+          content="test description tag 160 characters"
+        />
       </Head>
       <Header />
       {children}
