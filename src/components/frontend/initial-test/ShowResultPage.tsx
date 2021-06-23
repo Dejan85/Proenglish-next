@@ -1,14 +1,15 @@
 import React from "react";
+import Link from "next/link";
 
 const ShowResultPate = ({ endTestMsg }) => {
   return (
-    <div className="initialTest__show_result_page">
-      <p className="initialTest__show_result_page_p">
+    <div className="initial-test__show-result-page">
+      <p className="initial-test__show-result-page-p">
         Vas trenutni nivo znanje je {`${endTestMsg}`}
       </p>
-      <a href="/kursevi" className="initialTest__show_result_page_btn">
-        Zavrsi test
-      </a>
+      <Link href="/kursevi" passHref>
+        <a className="initialTest__show_result_page_btn">Zavrsi test</a>
+      </Link>
     </div>
   );
 };

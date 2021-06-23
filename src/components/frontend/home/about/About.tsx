@@ -9,6 +9,7 @@ import { aboutText, headingText, linkText } from "./messages";
 import uniqid from "uniqid";
 import { useRouter } from "next/router";
 import Image from "next/image";
+import Link from "next/link";
 
 const About = (): JSX.Element => {
   const router = useRouter();
@@ -37,9 +38,11 @@ const About = (): JSX.Element => {
               </ContentContainer>
             )
           )}
-          <a className="home-about__link" href="/onama" onClick={onClick}>
-            {linkText}
-          </a>
+          <Link href="/onama" passHref>
+            <a className="home-about__link" onClick={onClick}>
+              {linkText}
+            </a>
+          </Link>
         </ContentContainer>
         <ContentContainer className="home-about__image-container">
           <Image

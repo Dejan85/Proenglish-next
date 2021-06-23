@@ -1,4 +1,4 @@
-.initialTest {
+.initial-test {
   display: flex;
   flex-direction: column;
   max-width: 120rem;
@@ -112,7 +112,7 @@
     line-height: 2.2rem;
   }
 
-  &__show_result_page {
+  &__show-result-page {
     display: flex;
     flex-direction: column;
     max-width: 120rem;
@@ -124,7 +124,7 @@
     align-items: center;
   }
 
-  &__show_result_page_p {
+  &__show-result-page_p {
     padding: 10rem 0;
 
     font-size: 3rem;

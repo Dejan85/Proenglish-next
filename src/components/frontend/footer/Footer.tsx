@@ -1,5 +1,6 @@
 import React from "react";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 const Footer = () => {
   const router = useRouter();
@@ -30,49 +31,39 @@ const Footer = () => {
             <h1 className="footer__h1">Kursevi</h1>
             <ul className="footer__list">
               <li className="footer__item">
-                <a
-                  href="/kursevi"
-                  onClick={handleClick}
-                  className="footer__link"
-                >
-                  Kurs konverzacije
-                </a>
+                <Link href="/kursevi">
+                  <a onClick={handleClick} className="footer__link">
+                    Kurs konverzacije
+                  </a>
+                </Link>
               </li>
               <li className="footer__item">
-                <a
-                  href="/kursevi"
-                  onClick={handleClick}
-                  className="footer__link"
-                >
-                  a2
-                </a>
+                <Link href="/kursevi">
+                  <a onClick={handleClick} className="footer__link">
+                    a2
+                  </a>
+                </Link>
               </li>
               <li className="footer__item">
-                <a
-                  href="/kursevi"
-                  onClick={handleClick}
-                  className="footer__link"
-                >
-                  b1
-                </a>
+                <Link href="/kursevi">
+                  <a onClick={handleClick} className="footer__link">
+                    b1
+                  </a>
+                </Link>
               </li>
               <li className="footer__item">
-                <a
-                  href="/kursevi"
-                  onClick={handleClick}
-                  className="footer__link"
-                >
-                  b2
-                </a>
+                <Link href="/kursevi">
+                  <a onClick={handleClick} className="footer__link">
+                    b2
+                  </a>
+                </Link>
               </li>
               <li className="footer__item">
-                <a
-                  href="/kursevi"
-                  onClick={handleClick}
-                  className="footer__link"
-                >
-                  c1
-                </a>
+                <Link href="/kursevi">
+                  <a onClick={handleClick} className="footer__link">
+                    c1
+                  </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -80,49 +71,39 @@ const Footer = () => {
             <h1 className="footer__h1">Sertifikati</h1>
             <ul className="footer__list">
               <li className="footer__item">
-                <a
-                  href="/ispiti"
-                  onClick={handleClick}
-                  className="footer__link"
-                >
-                  Toefl
-                </a>
+                <Link href="/ispiti">
+                  <a onClick={handleClick} className="footer__link">
+                    Toefl
+                  </a>
+                </Link>
               </li>
               <li className="footer__item">
-                <a
-                  href="/ispiti"
-                  onClick={handleClick}
-                  className="footer__link"
-                >
-                  Ielts
-                </a>
+                <Link href="/ispiti">
+                  <a onClick={handleClick} className="footer__link">
+                    Ielts
+                  </a>
+                </Link>
               </li>
               <li className="footer__item">
-                <a
-                  href="/ispiti"
-                  onClick={handleClick}
-                  className="footer__link"
-                >
-                  Gmat
-                </a>
+                <Link href="/ispiti">
+                  <a onClick={handleClick} className="footer__link">
+                    Gmat
+                  </a>
+                </Link>
               </li>
               <li className="footer__item">
-                <a
-                  href="/ispiti"
-                  onClick={handleClick}
-                  className="footer__link"
-                >
-                  Gre
-                </a>
+                <Link href="/ispiti">
+                  <a onClick={handleClick} className="footer__link">
+                    Gre
+                  </a>
+                </Link>
               </li>
               <li className="footer__item">
-                <a
-                  href="/ispiti"
-                  onClick={handleClick}
-                  className="footer__link"
-                >
-                  Sat
-                </a>
+                <Link href="/ispiti">
+                  <a onClick={handleClick} className="footer__link">
+                    Sat
+                  </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -132,33 +113,27 @@ const Footer = () => {
             <ul className="footer__list">
               <li className="footer__item">
                 <i className="fab fa-facebook-square footer__icon facebook" />
-                <a
-                  href="https://www.facebook.com/pripremezaispite"
-                  className="footer__link "
-                  onClick={handleClick}
-                >
-                  facebook.com
-                </a>
+                <Link href="https://www.facebook.com/pripremezaispite">
+                  <a className="footer__link " onClick={handleClick}>
+                    facebook.com
+                  </a>
+                </Link>
               </li>
               <li className="footer__item">
                 <i className="fab fa-instagram footer__icon instagram" />
-                <a
-                  href="https://www.instagram.com/proenglish_skola_beograd/?igshid=16nsjmy5wedpu"
-                  className="footer__link"
-                  onClick={handleClick}
-                >
-                  Instagram
-                </a>
+                <Link href="https://www.instagram.com/proenglish_skola_beograd/?igshid=16nsjmy5wedpu">
+                  <a className="footer__link" onClick={handleClick}>
+                    Instagram
+                  </a>
+                </Link>
               </li>
               <li className="footer__item">
                 <i className="fab fa-linkedin footer__icon linkedin" />
-                <a
-                  href="https://www.linkedin.com/in/pro-english-a01051209"
-                  className="footer__link"
-                  onClick={handleClick}
-                >
-                  Linkedin
-                </a>
+                <Link href="https://www.linkedin.com/in/pro-english-a01051209">
+                  <a className="footer__link" onClick={handleClick}>
+                    Linkedin
+                  </a>
+                </Link>
               </li>
             </ul>
           </div>

@@ -35,7 +35,7 @@ const WeeklyEvents = (props: WeeklyEventsProps): JSX.Element => {
       }
     });
     setWeeklyEvents(weeklyEvent);
-  }, [weekDays, events]);
+  }, [events]);
 
   return (
     <ContentContainer className="events__weekly-content">

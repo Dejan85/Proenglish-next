@@ -25,13 +25,13 @@ const BlogPage = (): JSX.Element => {
     if (!blogData.length) {
       dispatch(fetchBlogData());
     }
-  }, []);
+  }, [blogData.length, dispatch]);
 
   useEffect(() => {
     if (blogData.length) {
       dispatch(getOneBlogAction(router.query.id));
     }
-  }, [blogData]);
+  }, [blogData, dispatch, router.query.id]);
 
   return oneBlogData?.length ? (
     <RenderOneBlogPage oneBlogData={oneBlogData} />

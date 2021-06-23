@@ -58,6 +58,7 @@ const RenderUi = (): JSX.Element => {
   const [counter, setCounter] = useState(0);
   const [diagram, setDiagram] = useState<number>(16.67);
   const { stringSplit } = useStringSplit();
+
   let diagramText: { firstWord: string; secondWord: string } = {
     firstWord: "",
     secondWord: "",
@@ -69,6 +70,7 @@ const RenderUi = (): JSX.Element => {
         item[initCourse[counter]] &&
         item[initCourse[counter]].map((item: any, index: number) => {
           if (index === 0) {
+            // eslint-disable-next-line react-hooks/exhaustive-deps
             diagramText = stringSplit(item[0]);
           }
           return (

@@ -18,7 +18,7 @@ const Exams = (): JSX.Element => {
   useEffect(() => {
     window.scrollTo(0, 0);
     dispatch(fetchExamsData());
-  }, []);
+  }, [dispatch]);
   return examsData.length ? (
     <RenderUI examsData={examsData} />
   ) : (

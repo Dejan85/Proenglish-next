@@ -22,7 +22,7 @@ const Blog = () => {
     if (!blogData.length) {
       dispatch(fetchBlogData());
     }
-  }, []);
+  }, [blogData.length, dispatch]);
 
   return <RenderUi blogData={blogData} />;
 };

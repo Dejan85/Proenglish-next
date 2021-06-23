@@ -1,20 +1,47 @@
 import React, { useEffect } from "react";
+import { useInjectSaga } from "src/utils/injectSaga";
+import { useInjectReducer } from "src/utils/injectReducer";
+import { useDispatch, useSelector } from "react-redux";
+import { getTitlesData } from "./selectors";
+import { LAYOUT_SCOPE } from "./constants";
+import { reducer, fetchTitlesData } from "./slice";
+import saga from "./saga";
 import Head from "next/head";
 import { Header, Footer } from "src/components/frontend";
 import { Container } from "src/components/ui";
-import useTitle from "src/hooks/title/useTitle";
+import { useRouter } from "next/router";
 
 const Layout = ({ children }) => {
-  const { pageTitle } = useTitle();
+  useInjectReducer({ key: LAYOUT_SCOPE, reducer });
+  useInjectSaga({ key: LAYOUT_SCOPE, saga });
+  const dispatch = useDispatch();
+  const router = useRouter();
+  const { titles } = useSelector(getTitlesData);
+
+  useEffect(() => {
+    if (!titles.length) dispatch(fetchTitlesData());
+  }, [titles.length, dispatch]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
+  const handleTitle = (): string => {
+    const page = router.pathname.substr(1, router.pathname.length);
+
+    return (
+      (titles?.length &&
+        titles.filter(
+          (title: { page: string; title: string }) => title.page === page
+        )[0]?.title) ||
+      (titles?.length && titles[0].title)
+    );
+  };
+
   return (
     <Container>
       <Head>
-        <title>{pageTitle}</title>
+        <title>{handleTitle()}</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>

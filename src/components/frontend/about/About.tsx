@@ -19,7 +19,7 @@ const About = () => {
   useEffect(() => {
     dispatch(fetchAboutDataAction());
     setTitleHandler("About Title");
-  }, []);
+  }, [dispatch, setTitleHandler]);
 
   return <RenderUi aboutData={aboutData} />;
 };
