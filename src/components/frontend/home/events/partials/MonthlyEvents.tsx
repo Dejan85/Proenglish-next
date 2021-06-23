@@ -41,7 +41,7 @@ const MonthlyEvents = (props: UiRenderProps): JSX.Element => {
 
   return (
     <ContentContainer className="home-events__monthly-events">
-      <Heading className="home-events__calendar-heading" as="h2">
+      <Heading className="home-events__calendar-heading" as="h4">
         Mesečni događaji
       </Heading>
 

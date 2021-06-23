@@ -86,7 +86,7 @@ export const RenderUi = (props: { blogData: object[] }): JSX.Element => {
     <>
       <SubContainer className="home-blog">
         <ContentContainer className="home-blog__heading-container">
-          <Heading as="h1" className="default-heading">
+          <Heading as="h2" className="default-heading">
             {headingText}
           </Heading>
           {RenderLine}

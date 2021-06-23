@@ -27,7 +27,7 @@ const Render = (): JSX.Element => {
       />
       <SubContainer className="home-experience__container">
         <ContentContainer className="home-experience__heading-container">
-          <Heading className="home-experience__heading" as="h1">
+          <Heading className="home-experience__heading" as="h4">
             {headingText}
           </Heading>
           <Line>

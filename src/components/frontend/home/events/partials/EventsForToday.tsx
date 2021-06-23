@@ -40,7 +40,7 @@ const EventsForToday = (props: {
 
   return (
     <ContentContainer className="home-events__events-for-today">
-      <Heading className="home-events__calendar-heading" as="h2">
+      <Heading className="home-events__calendar-heading" as="h4">
         Događaji za današnji dan
       </Heading>
 

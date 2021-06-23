@@ -14,7 +14,7 @@ const Footer = () => {
     <div className="footer">
       <div className="footer__container">
         <div className="footer__msg">
-          <h1 className="footer__h1">ProEnglish</h1>
+          <h3 className="footer__h1">ProEnglish</h3>
           <p className="footer__p">
             We are Education, your passion for knowledge and inspiration. Step
             inside our school and make English your comfort zone. Follow us to
@@ -28,7 +28,7 @@ const Footer = () => {
         </div>
         <div className="footer__content-container">
           <div className="footer__course">
-            <h1 className="footer__h1">Kursevi</h1>
+            <h4 className="footer__h1">Kursevi</h4>
             <ul className="footer__list">
               <li className="footer__item">
                 <Link href="/kursevi">
@@ -68,7 +68,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="footer__certificate">
-            <h1 className="footer__h1">Sertifikati</h1>
+            <h4 className="footer__h1">Sertifikati</h4>
             <ul className="footer__list">
               <li className="footer__item">
                 <Link href="/ispiti">
@@ -109,7 +109,7 @@ const Footer = () => {
           </div>
 
           <div className="footer__follow">
-            <h1 className="footer__h1">Pratite nas</h1>
+            <h4 className="footer__h1">Pratite nas</h4>
             <ul className="footer__list">
               <li className="footer__item">
                 <i className="fab fa-facebook-square footer__icon facebook" />
@@ -139,7 +139,7 @@ const Footer = () => {
           </div>
 
           <div className="footer__contact">
-            <h1 className="footer__h1">Kontakt</h1>
+            <h4 className="footer__h1">Kontakt</h4>
             <ul className="footer__list">
               <li className="footer__item">
                 <i className="fas fa-phone phone" />
@@ -162,9 +162,9 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer__devxad">
-        <h2 className="footer__h2">
+        <p className="footer__h2">
           © {`${new Date().getFullYear()}`} - MERN APP - All rights reserved.
-        </h2>
+        </p>
       </div>
     </div>
   );
