@@ -34,7 +34,8 @@ const Layout = ({ children }) => {
         titles.filter(
           (title: { page: string; title: string }) => title.page === page
         )[0]?.title) ||
-      (titles?.length && titles[0].title)
+      (titles?.length && titles[0].title) ||
+      "Proenglish"
     );
   };
 
