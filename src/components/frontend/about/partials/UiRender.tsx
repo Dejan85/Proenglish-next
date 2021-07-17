@@ -35,7 +35,7 @@ const UiRender = (props: UiRenderProps) => {
               {index === 0 ? (
                 <>
                   <SubContainer className="about__sub-container">
-                    <Heading className="about__heading" as="h1">
+                    <Heading className="about__heading" as="h4">
                       {title}
                     </Heading>
                     <ContentContainer className="about__content">
@@ -70,7 +70,7 @@ const UiRender = (props: UiRenderProps) => {
                   </ContentContainer>
 
                   <SubContainer className="about__sub-container">
-                    <Heading className="about__heading" as="h1">
+                    <Heading className="about__heading" as="h4">
                       {title}
                     </Heading>
                     <ContentContainer className="about__content">

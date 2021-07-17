@@ -39,7 +39,7 @@ const BlogModal = (props: {
         <Text className="blog__modal-date" as="span">
           {blog.created}
         </Text>
-        <Heading className="blog__modal-heading" as="h1">
+        <Heading className="blog__modal-heading" as="h3">
           {blog.title}
         </Heading>
         <Text className="blog__modal-text" as="p">
