@@ -8,6 +8,7 @@ import { EXAMS_SCOPE } from "./contants";
 import { fetchExamsData, reducer } from "./slice";
 import saga from "./saga";
 import RenderUI from "./patials/RenderUI";
+import ExamsNavPage from "./exams-nav-page/ExamsNavPage";
 
 const Exams = (): JSX.Element => {
   useInjectReducer({ key: EXAMS_SCOPE, reducer });
@@ -20,7 +21,8 @@ const Exams = (): JSX.Element => {
     dispatch(fetchExamsData());
   }, [dispatch]);
   return examsData.length ? (
-    <RenderUI examsData={examsData} />
+    // <RenderUI examsData={examsData} />
+    <ExamsNavPage />
   ) : (
     <Loading height="100vh" />
   );
