@@ -4,7 +4,9 @@ import { LinkBoxProps } from "../types";
 import Image from "next/image";
 import img from "public/course/background.jpg";
 
-const LinkBox: React.FC<LinkBoxProps> = ({ content }): JSX.Element => {
+const LinkBox: React.FC<LinkBoxProps> = ({
+  content: { name },
+}): JSX.Element => {
   return (
     <ContentContainer className="link-box">
       <Image
@@ -16,7 +18,7 @@ const LinkBox: React.FC<LinkBoxProps> = ({ content }): JSX.Element => {
         objectFit="cover"
       />
       <Text className="link-box__text" as="p">
-        {content.name}
+        {name}
       </Text>
     </ContentContainer>
   );
