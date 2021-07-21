@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const LinkBox: React.FC<LinkBoxProps> = ({
-  content: { name, image },
+  content: { name, image, slug },
 }): JSX.Element => {
   return (
     <ContentContainer className="link-box">
@@ -18,7 +18,7 @@ const LinkBox: React.FC<LinkBoxProps> = ({
         objectFit="cover"
         placeholder="blur"
       />
-      <Link href="/">
+      <Link href={`/ispiti/${slug}`}>
         <a className="link-box__text default-paragraph">{name}</a>
       </Link>
     </ContentContainer>

@@ -10,3 +10,4 @@ export { Blog, BlogPage } from "./blog";
 export { Contact } from "./contact";
 export { Footer } from "./footer";
 export { InitialTest } from "./initial-test";
+export { Toefl } from "./exams/toefl";

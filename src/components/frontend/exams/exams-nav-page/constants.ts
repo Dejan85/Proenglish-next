@@ -9,7 +9,7 @@ import cae from "public/exams/exams-nav-page/CAE.jpg";
 import cpe from "public/exams/exams-nav-page/CPE.jpg";
 
 export const links = [
-  { name: "toefl", image: toefl },
+  { name: "toefl", image: toefl, slug: "toefl" },
   { name: "ielts", image: ielts },
   { name: "sat", image: sat },
   { name: "gre", image: gre },
