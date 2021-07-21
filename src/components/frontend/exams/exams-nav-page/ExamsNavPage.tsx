@@ -23,7 +23,7 @@ const ExamsNavPage: React.FC = (): JSX.Element => {
       </SubContainer>
 
       <SubContainer className="exams-nav-page__nav-container">
-        {links.map((link: { name: string }) => (
+        {links.map((link: { name: string; image: any }) => (
           <LinkBox key={uniqid()} content={link} />
         ))}
       </SubContainer>

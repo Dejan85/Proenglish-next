@@ -1,3 +1,3 @@
 export interface LinkBoxProps {
-  content: { name: string };
+  content: { name: string; image: any };
 }

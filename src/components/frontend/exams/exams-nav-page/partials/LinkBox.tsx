@@ -2,16 +2,15 @@ import React from "react";
 import { ContentContainer, Text } from "src/components/ui";
 import { LinkBoxProps } from "../types";
 import Image from "next/image";
-import img from "public/course/background.jpg";
 
 const LinkBox: React.FC<LinkBoxProps> = ({
-  content: { name },
+  content: { name, image },
 }): JSX.Element => {
   return (
     <ContentContainer className="link-box">
       <Image
         className="link-box__img"
-        src={img}
+        src={image}
         alt="test"
         width="220"
         height="220"
