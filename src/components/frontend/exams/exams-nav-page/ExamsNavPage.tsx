@@ -18,6 +18,7 @@ const ExamsNavPage: React.FC = (): JSX.Element => {
           width="1300"
           height="950"
           objectFit="cover"
+          placeholder="blur"
         />
         <ContentContainer className="exams-nav-page__yellow-div" />
       </SubContainer>

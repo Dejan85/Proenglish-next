@@ -11,7 +11,7 @@
   &__yellow-div {
     position: absolute;
     background-color: #f1c50e;
-    width: 88%;
+    width: 90%;
     min-height: 105rem;
     right: 0;
     top: 20rem;
@@ -20,6 +20,7 @@
   &__content {
     position: absolute;
     max-width: 140rem;
+    width: 100%;
     z-index: 1;
     padding: 0;
     align-items: flex-start;
@@ -38,8 +39,12 @@
     width: 100%;
     z-index: 5;
     margin-top: 30rem;
-    margin-left: -10rem;
+    // margin-left: -10rem;
     padding-bottom: 10rem;
+
+    // @include respond(1200) {
+    //   margin-left: 0rem;
+    // }
   }
 }
 
@@ -61,5 +66,6 @@
     text-transform: uppercase;
     font-family: $lato-sans-serif;
     font-weight: 700;
+    text-decoration: none;
   }
 }
