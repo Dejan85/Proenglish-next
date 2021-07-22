@@ -3,7 +3,6 @@ import {
   ContentContainer,
   Heading,
   SubContainer,
-  Text,
 } from "src/components/ui";
 import React from "react";
 import Link from "next/link";

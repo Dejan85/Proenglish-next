@@ -12,14 +12,3 @@ export const theaderInlineGreenStyles = {
   background: greenColors.lightGreen,
   color: "black",
 };
-
-export const theaderInlineLightOrangeStyles = {
-  ...theaderInlineGreenStyles,
-  background: greenColors.lightGreen,
-  color: "black",
-};
-
-export const theaderInlineBorderStyles = {
-  borderTop: "2px solid #ffd096",
-  borderBottom: "2px solid #ffd096",
-};
