@@ -20,3 +20,4 @@ export { ExperienceModal } from "./experience-modal";
 export { CarouselUi } from "./carousel";
 export { Label } from "./label";
 export { EmptyElement } from "./empty-element";
+export { Wrapper } from "./wrapper";
