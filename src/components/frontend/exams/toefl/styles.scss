@@ -74,12 +74,14 @@
 
   &__below-table-text {
     padding: 3rem 0;
+    font-size: 1.8rem;
   }
 
   &__table-and-image-section {
     display: flex;
     width: inherit;
     justify-content: space-between;
+    padding: 10rem 0;
   }
 
   &__table-and-image-section-table {
@@ -88,6 +90,9 @@
 
   &__table-and-image-section-image {
     width: 55rem;
+    display: flex;
+    align-items: center;
+
     img {
       border-radius: 3%;
     }

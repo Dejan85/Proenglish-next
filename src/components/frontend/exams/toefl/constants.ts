@@ -11,9 +11,20 @@ export const theaderInlineStyles = {
 };
 
 export const theaderInlineOrangeStyles = {
-  padding: "2rem 0 2rem 2rem",
+  ...theaderInlineStyles,
   background: "#ffd096",
   color: "white",
+};
+
+export const theaderInlineLightOrangeStyles = {
+  ...theaderInlineOrangeStyles,
+  background: "#feefe7",
+  color: "black",
+};
+
+export const theaderInlineBorderStyles = {
+  borderTop: "2px solid #ffd096",
+  borderBottom: "2px solid #ffd096",
 };
 
 export const belowTableText =
