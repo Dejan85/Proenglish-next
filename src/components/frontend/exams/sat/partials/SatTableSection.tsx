@@ -1,7 +1,7 @@
 import React from "react";
-import { ContentContainer, Wrapper, Text } from "src/components/ui";
+import { ContentContainer, Wrapper } from "src/components/ui";
 import { theaderInlineGreenStyles, theaderInlineStyles } from "../constants";
-import { customStyle, greenColors } from "../constants";
+import { greenColors } from "../constants";
 
 const SatTableSection: React.FC = (): JSX.Element => {
   return (

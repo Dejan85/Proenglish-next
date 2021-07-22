@@ -2,12 +2,12 @@ import { SubContainer, Text } from "src/components/ui";
 import React from "react";
 import SatFirstSection from "./partials/SatFirstSection";
 import SatTableSection from "./partials/SatTableSection";
+import SatQuestions from "./partials/SatQuestions";
 
 const Sat: React.FC = (): JSX.Element => {
   return (
     <>
       <SatFirstSection />
-
       <SubContainer className="toefl__table-section">
         <Text as="p" className="toefl__table-title">
           SAT ispit se sastoji iz 2 dela, a nekadašnji prvi deo ispita - esej –
@@ -21,8 +21,8 @@ const Sat: React.FC = (): JSX.Element => {
           nego što zvuče ili izgledaju na prvi pogled.
         </Text>
         <SatTableSection />
-        {/* <ToeflTableAndImageSection /> */}
       </SubContainer>
+      <SatQuestions />
     </>
   );
 };
