@@ -4,6 +4,7 @@ import { toeflTableTitle } from "./constants";
 import ToeflFirstSection from "./partials/ToeflFirstSection";
 import ToeflTable from "./partials/ToeflTable";
 import ToeflTableAndImageSection from "./partials/ToeflTableAndImageSection";
+import Questions from "./partials/Questions";
 
 const Toefl: React.FC = (): JSX.Element => {
   return (
@@ -16,6 +17,7 @@ const Toefl: React.FC = (): JSX.Element => {
         <ToeflTable />
         <ToeflTableAndImageSection />
       </SubContainer>
+      <Questions />
     </>
   );
 };

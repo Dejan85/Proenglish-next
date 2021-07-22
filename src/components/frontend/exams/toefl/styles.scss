@@ -97,4 +97,40 @@
       border-radius: 3%;
     }
   }
+
+  &__questions {
+    background-color: #f5f7fa;
+    padding: 5rem 0;
+  }
+
+  &__questions-heading {
+    font-size: 5rem;
+    font-family: $lato-sans-serif;
+    font-weight: 800;
+
+    &--h5 {
+      font-size: 2.5rem;
+      font-family: $lato-sans-serif;
+      font-weight: 700;
+      padding: 4rem 0 0 0;
+    }
+  }
+
+  &__questions-text-container {
+    flex-direction: column;
+  }
+
+  &__questions-text {
+    font-size: 2rem;
+    font-family: $lato-sans-serif;
+    padding: 1rem 0;
+    color: #524a4a;
+    font-weight: 400;
+    text-align: justify;
+
+    a {
+      color: $main-color;
+      text-decoration: none;
+    }
+  }
 }
