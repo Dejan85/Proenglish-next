@@ -2,11 +2,12 @@ import React from "react";
 import { HeadingProps } from "./types";
 
 function Heading(props: HeadingProps): JSX.Element {
-  const { as = "h1", className: customClassName, children } = props;
+  const { as = "h1", className: customClassName, children, style } = props;
   const Wrapper = as;
   const className: string = "heading";
   return (
     <Wrapper
+      style={style}
       className={
         customClassName ? `${className} ${customClassName}` : className
       }

@@ -11,7 +11,7 @@ import cpe from "public/exams/exams-nav-page/CPE.jpg";
 export const links = [
   { name: "toefl", image: toefl, slug: "toefl" },
   { name: "ielts", image: ielts },
-  { name: "sat", image: sat },
+  { name: "sat", image: sat, slug: "sat" },
   { name: "gre", image: gre },
   { name: "gmat", image: gmat },
   { name: "bocconi", image: bocconi },
