@@ -1,0 +1,142 @@
+.exams-heading-section {
+  flex-direction: column;
+  padding: 0 0 7rem 0;
+
+  &__first-section {
+    background-color: #f5f7fa;
+  }
+
+  &__heading-container {
+    align-items: flex-end;
+    padding: 7rem 0 2rem 0;
+  }
+
+  &__heading-circle {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    background-color: $main-color;
+  }
+
+  &__heading {
+    margin-left: 2.5rem;
+    font-size: 5rem;
+    font-family: $lato-sans-serif;
+    font-weight: 800;
+    color: $main-color;
+  }
+
+  &__text-container {
+    justify-content: space-between;
+    // min-height: 50rem;
+    align-items: center;
+  }
+
+  &__text {
+    width: 60%;
+    line-height: 4rem;
+    font-size: 2rem;
+    text-align: left;
+  }
+
+  &__text-img {
+    border-radius: 50%;
+  }
+
+  &__table-section {
+    flex-direction: column;
+  }
+
+  &__table-title {
+    padding-top: 2rem;
+  }
+
+  &__table {
+    max-width: 120rem;
+    width: 100%;
+    margin-top: 5rem;
+    flex-direction: column;
+  }
+
+  &__table-theader-container {
+    width: inherit;
+    display: flex;
+  }
+
+  &__table-theader {
+    flex: 1;
+    background-color: #f69059;
+    color: white;
+    font-family: $lato-sans-serif;
+    font-size: 2rem;
+    padding: 1rem 0 1rem 2rem;
+  }
+
+  &__below-table-text {
+    padding: 3rem 0;
+    font-size: 1.8rem;
+
+    a {
+      text-decoration: none;
+      font-family: $lato-sans-serif;
+      color: $main-color;
+    }
+  }
+
+  &__table-and-image-section {
+    display: flex;
+    width: inherit;
+    justify-content: space-between;
+    padding: 10rem 0;
+  }
+
+  &__table-and-image-section-table {
+    width: 55rem;
+  }
+
+  &__table-and-image-section-image {
+    width: 55rem;
+    display: flex;
+    align-items: center;
+
+    img {
+      border-radius: 3%;
+    }
+  }
+
+  &__questions {
+    background-color: #f5f7fa;
+    padding: 5rem 0;
+  }
+
+  &__questions-heading {
+    font-size: 5rem;
+    font-family: $lato-sans-serif;
+    font-weight: 800;
+
+    &--h5 {
+      font-size: 2.5rem;
+      font-family: $lato-sans-serif;
+      font-weight: 700;
+      padding: 4rem 0 0 0;
+    }
+  }
+
+  &__questions-text-container {
+    flex-direction: column;
+  }
+
+  &__questions-text {
+    font-size: 2rem;
+    font-family: $lato-sans-serif;
+    padding: 1rem 0;
+    color: #524a4a;
+    font-weight: 400;
+    text-align: justify;
+
+    a {
+      color: $main-color;
+      text-decoration: none;
+    }
+  }
+}

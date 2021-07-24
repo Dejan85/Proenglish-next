@@ -21,3 +21,6 @@ export { CarouselUi } from "./carousel";
 export { Label } from "./label";
 export { EmptyElement } from "./empty-element";
 export { Wrapper } from "./wrapper";
+export { ExamsHeadingSection } from "./exams-heading-section";
+export { ExamsTableSection } from "./exams-table-section";
+export { ExamsTable } from "./exams-table";
