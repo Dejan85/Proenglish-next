@@ -1,0 +1,27 @@
+.exams {
+  &__table-and-image-section-container {
+    flex-direction: column;
+    max-width: 120rem;
+  }
+
+  &__table-and-image-section {
+    display: flex;
+    width: inherit;
+    justify-content: space-between;
+    padding: 10rem 0;
+  }
+
+  &__table-and-image-section-table {
+    width: 55rem;
+  }
+
+  &__table-and-image-section-image {
+    width: 55rem;
+    display: flex;
+    align-items: center;
+
+    img {
+      border-radius: 3%;
+    }
+  }
+}

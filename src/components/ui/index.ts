@@ -24,3 +24,4 @@ export { Wrapper } from "./wrapper";
 export { ExamsHeadingSection } from "./exams-heading-section";
 export { ExamsTableSection } from "./exams-table-section";
 export { ExamsTable } from "./exams-table";
+export { ExamsTableAndImageSection } from "./exams-table-and-image-section";

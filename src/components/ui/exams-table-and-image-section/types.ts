@@ -1,6 +1,7 @@
-export interface ExamsTableSectionProps {
+export interface ExamsTableAndImageSectionProps {
   content: {
-    tableTitle?: string;
+    text: string;
+    img: StaticImageData;
     table: {
       theader: string[];
       rows: string[][];

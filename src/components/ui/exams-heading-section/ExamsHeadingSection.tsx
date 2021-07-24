@@ -12,7 +12,7 @@ import Image from "next/image";
 import { ExamsHeadingSectionProps } from "./types";
 
 const ExamsHeadingSection: React.FC<ExamsHeadingSectionProps> = ({
-  content: { h1, text, image },
+  content: { h1, text, image, styles },
 }): JSX.Element => {
   return (
     <Container className="exams-heading-section">
@@ -21,8 +21,13 @@ const ExamsHeadingSection: React.FC<ExamsHeadingSectionProps> = ({
           <EmptyElement
             as="div"
             className="exams-heading-section__heading-circle"
+            style={styles}
           />
-          <Heading className="exams-heading-section__heading" as="h1">
+          <Heading
+            className="exams-heading-section__heading"
+            as="h1"
+            style={{ color: styles.color }}
+          >
             {h1}
           </Heading>
         </ContentContainer>

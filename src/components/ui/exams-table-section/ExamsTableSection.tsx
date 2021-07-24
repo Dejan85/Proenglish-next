@@ -15,14 +15,17 @@ const ExamsTableSection: React.FC<ExamsTableSectionProps> = ({
     styles: { headerStyles, rowStyles },
   },
 }): JSX.Element => {
+  console.log("test", theader);
+
   return (
     <SubContainer className="exams__table-section">
-      <Text as="p" className="exams__table-title">
-        {tableTitle}
-      </Text>
-      {/* <ToeflTable /> */}
+      {tableTitle && (
+        <Text as="p" className="exams__table-title">
+          {tableTitle}
+        </Text>
+      )}
       <ExamsTable.TheaderContainer>
-        {theader.map((item: string) => {
+        {theader?.map((item: string) => {
           return (
             <ExamsTable.TableTheader key={uniqid()} style={headerStyles}>
               {item}
@@ -32,7 +35,7 @@ const ExamsTableSection: React.FC<ExamsTableSectionProps> = ({
       </ExamsTable.TheaderContainer>
 
       <>
-        {rows.map((row: string[], index: number) => {
+        {rows?.map((row: string[], index: number) => {
           return (
             <ExamsTable.TheaderContainer key={uniqid()}>
               {row.map((item: string) => {
@@ -49,8 +52,6 @@ const ExamsTableSection: React.FC<ExamsTableSectionProps> = ({
           );
         })}
       </>
-
-      {/* <ToeflTableAndImageSection /> */}
     </SubContainer>
   );
 };

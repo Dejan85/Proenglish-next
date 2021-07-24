@@ -1,18 +1,15 @@
 import React from "react";
 import {
-  SubContainer,
-  Text,
   ExamsHeadingSection,
   ExamsTableSection,
+  ExamsTableAndImageSection,
 } from "src/components/ui";
 import {
-  toeflTableTitle,
   headingContent,
   tableSectionContent,
+  tableAndImageSectionContent,
 } from "./constants";
-import ToeflFirstSection from "./partials/ToeflFirstSection";
-import ToeflTable from "./partials/ToeflTable";
-import ToeflTableAndImageSection from "./partials/ToeflTableAndImageSection";
+
 import Questions from "./partials/Questions";
 
 const Toefl: React.FC = (): JSX.Element => {
@@ -20,6 +17,7 @@ const Toefl: React.FC = (): JSX.Element => {
     <>
       <ExamsHeadingSection content={headingContent} />
       <ExamsTableSection content={tableSectionContent} />
+      <ExamsTableAndImageSection content={tableAndImageSectionContent} />
       <Questions />
     </>
   );
